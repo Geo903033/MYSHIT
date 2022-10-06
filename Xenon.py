@@ -91,6 +91,8 @@ for cc in ccs:
 print("\x1b[1;33mSetting up HTTPD and TFTP...\x1b[0m")
 time.sleep(5)
 
+run("rm -rf /root/"+dirname+"/; rm -rf /var/www/html/"+dirname+"/; rm -rf /var/ftp/"+dirname+"/; rm -rf /var/lib/tftpboot/"+dirname+"/")
+run("mkdir /root/"+dirname+"/; mkdir /var/www/html/"+dirname+"/; mkdir /var/ftp/"+dirname+"/; mkdir /var/lib/tftpboot/"+dirname+"/")
 run("apt install apache2 -y")
 run("service httpd start")
 run("apt install xinetd tftp tftp-server -y")

